@@ -1,0 +1,111 @@
+name: Sbarro Combined Refresh
+
+on:
+  schedule:
+    # Daily at 10:00 AM IST (04:30 UTC)
+    - cron: "30 4 * * *"
+
+  workflow_dispatch:
+
+jobs:
+  refresh:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout Repository
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Install dependencies
+        run: |
+          python -m pip install --upgrade pip
+          pip install -r requirements.txt
+
+      - name: Create API environment file
+        env:
+          SI_CLIENT_ID: ${{ secrets.SI_CLIENT_ID }}
+          SI_CLIENT_SECRET: ${{ secrets.SI_CLIENT_SECRET }}
+          SI_TOKEN_URL: ${{ secrets.SI_TOKEN_URL }}
+          EU_CLIENT_ID: ${{ secrets.EU_CLIENT_ID }}
+          EU_CLIENT_SECRET: ${{ secrets.EU_CLIENT_SECRET }}
+          EU_TOKEN_URL: ${{ secrets.EU_TOKEN_URL }}
+        run: |
+          echo "SI_CLIENT_ID=$SI_CLIENT_ID" >> .env
+          echo "SI_CLIENT_SECRET=$SI_CLIENT_SECRET" >> .env
+          echo "SI_TOKEN_URL=$SI_TOKEN_URL" >> .env
+          echo "EU_CLIENT_ID=$EU_CLIENT_ID" >> .env
+          echo "EU_CLIENT_SECRET=$EU_CLIENT_SECRET" >> .env
+          echo "EU_TOKEN_URL=$EU_TOKEN_URL" >> .env
+
+      - name: Create Google credentials file
+        env:
+          GOOGLE_CREDENTIALS: ${{ secrets.GOOGLE_CREDENTIALS }}
+        run: |
+          printf '%s' "$GOOGLE_CREDENTIALS" > credentials.json
+
+      - name: Run Pipeline
+        run: python s1_main.py
+
+      - name: Send success email
+        if: success()
+        env:
+          EMAIL_USERNAME: ${{ secrets.USERNAME }}
+          EMAIL_PASSWORD: ${{ secrets.PASSWORD }}
+          EMAIL_RECIPIENT: ${{ vars.RECIEPIENT_NAME }}
+          RUN_URL: ${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.run_id }}
+        run: |
+          python - <<'PY'
+          import os
+          import smtplib
+          from email.message import EmailMessage
+
+          message = EmailMessage()
+          message["Subject"] = "SUCCESS: Sbarro pipeline completed"
+          message["From"] = os.environ["EMAIL_USERNAME"]
+          message["To"] = os.environ["EMAIL_RECIPIENT"]
+          message.set_content(
+              "The Sbarro pipeline completed successfully.\n\n"
+              f"Run details: {os.environ['RUN_URL']}"
+          )
+
+          with smtplib.SMTP_SSL("smtp.gmail.com", 465) as smtp:
+              smtp.login(
+                  os.environ["EMAIL_USERNAME"],
+                  os.environ["EMAIL_PASSWORD"],
+              )
+              smtp.send_message(message)
+          PY
+
+      - name: Send failure email
+        if: failure()
+        env:
+          EMAIL_USERNAME: ${{ secrets.USERNAME }}
+          EMAIL_PASSWORD: ${{ secrets.PASSWORD }}
+          EMAIL_RECIPIENT: ${{ vars.RECIEPIENT_NAME }}
+          RUN_URL: ${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.run_id }}
+        run: |
+          python - <<'PY'
+          import os
+          import smtplib
+          from email.message import EmailMessage
+
+          message = EmailMessage()
+          message["Subject"] = "FAILED: Sbarro pipeline requires attention"
+          message["From"] = os.environ["EMAIL_USERNAME"]
+          message["To"] = os.environ["EMAIL_RECIPIENT"]
+          message.set_content(
+              "The Sbarro pipeline failed and requires attention.\n\n"
+              f"Run details: {os.environ['RUN_URL']}"
+          )
+
+          with smtplib.SMTP_SSL("smtp.gmail.com", 465) as smtp:
+              smtp.login(
+                  os.environ["EMAIL_USERNAME"],
+                  os.environ["EMAIL_PASSWORD"],
+              )
+              smtp.send_message(message)
+          PY

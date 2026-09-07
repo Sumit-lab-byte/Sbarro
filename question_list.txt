@@ -1,0 +1,144 @@
+9819:1 | Date shop performed
+9819:729873 | Basic Information
+9819:729874 | Date of Visit:
+9819:729875 | Day of visit:
+9819:729876 | Was this location open for business?
+9819:729877 | Time of Visit:
+9819:729878 | ...if no, please give details:
+9819:729879 | ...if no, please upload picture of closed store front:
+9819:729880 | Expense Amount:
+9819:729881 | Editors Comments
+9819:729882 | AI SBARRO GUIDELINES
+
+VISIT RULES
+
+Do not visit during the first or last hour of operation.
+Arrive during the designated lunch or dinner period.
+Confirm operating hours online before visiting.
+
+PURCHASE INSTRUCTIONS
+
+At the counter, order only a single slice of pepperoni pizza first — this gives the employee a chance to upsell.
+Note if the employee offers a Combo, Beverage,  Large Sized Beverage, Dipping Cup, or anything else that increases the amount spent.
+If no combo is offered, say you changed your mind and order a two-slice combo, keeping one slice as pepperoni.
+If no combo is available, order the pepperoni slice plus a drink and note this in the narrative.
+If pepperoni is unavailable, order a different flavor and note this in the narrative.
+Always obtain a receipt. Ask for one if not provided automatically. Shop will be rejected without a receipt.
+
+REQUIRED PHOTOS
+
+Pizza display — must show all pizzas, Stromboli, breadsticks, and labels clearly. Split into 2 images if needed.
+Three close-ups of the pepperoni pizza. (top, side, bottom angles).
+Overall store photo.
+Receipt.
+
+MERCHANDISING EVALUATION
+
+Pizzas & Stromboli: Count available trays; note how many have fewer than 3 pieces. Record all flavors displayed.
+Breadsticks: Confirm at least one tray is available and is at least half full.
+Other food items (pasta, salads, meatballs, etc.): Note whether they look appetizing.
+
+FOOD QUALITY EVALUATION
+
+Assess portion size, topping coverage, freshness, and temperature.
+Pepperoni count rules:
+
+Two half pepperonis = 1
+¾ of a pepperoni = 1
+¼ or smaller = 0
+8.5 or more=select the radio button
+Less than 8.5=select the radio button
+
+Bubbles: Note whether bubbles were absent/minimal (no impact) or large/numerous (displaced toppings or affected quality).
+
+NARRATIVE
+Write a detailed, step-by-step story of the full experience. Use the evaluation questions as a guide. Any negative response must be explained in the narrative.** Possible Pizza and Stromboli flavors-other flavors may also be available: NY Cheese; NY Pepperoni; Sausage; Supremo; Four Cheese White; Meat Primo; Veggie; Chicken Bacon Ranch; Hawaiian; Buffalo Chicken; White Pizza; Spinach, Tomato & Onion; Spinach, Broccoli & Tomato; Spinach & Mushroom; Fresh Tomato & Basil; Garden Harvest; Mushroom; Sausage & Pepperoni; Ham & Pineapple; Bacon, Egg & Cheese Breakfast Pizza; Ham, Egg & Cheese Breakfast Pizza; Western Breakfast Pizza; Veggie Breakfast Pizza; Loaded Breakfast Pizza; Farmer’s Favorite Breakfast Pizza; Homestyle Breakfast Pizza; Sauteed Spinach & Yellow Peppers; Sauteed Red & Yellow Peppers; Broccoli & Chicken; Chicken & Vegetable; X-Treme Pepperoni; Stuffed Spinach & Broccoli Pizza; Pepperoni Stromboli; Spinach Stromboli; Chicken & Four Cheese Stromboli; Pepperoni & Cheese Stromboli; Spinach & Cheese Stromboli; Pepperoni, Sausage & Bacon Stromboli; Large Stromboli; Bacon, Egg & Cheese Stromboli; Sausage, Bacon & Maple Stromboli; Spinach, Tomato & Broccoli Stromboli; Chicken & Broccoli Stromboli; X-Treme Pepperoni Stromboli.  Each question measures only what it explicitly asks. CRITICAL: If a question is marked negative with no narrative explanation, you MUST flag it for the editor. Do not skip it. Do not ignore it. This is required every time.
+9819:729883 | If the photos are not close up and clear, we can't use your shop. There are sample photos on the form showing how they should look.
+9819:729884 | You need to take three clear photos of your pizza slice:
+- One from the top
+- One from the side
+- One from the bottom
+9819:729885 | Receipt upload:
+9819:729886 | Photo upload of overall store:
+9819:729887 | Merchandising
+9819:729888 | Merchandising - 1. How many trays of pizzas were available for you to choose from in the display area?
+9819:729899 | Merchandising - 2. What flavors (or types) of pizzas were displayed?
+9819:729900 | Merchandising - 3. How many trays of strombolis were available for you to choose from in the display area?
+9819:729901 | Merchandising - 4. What types of strombolis were displayed?
+9819:729902 | Merchandising - 5. After 11:00 AM, did the display area have at least one tray of breadsticks available for purchase?
+9819:729903 | Merchandising - 6. Were professional looking labels visible in front of every product?
+9819:729904 | Merchandising - 7. Were there at least 3 pieces on each pizza and stromboli tray, and were the breadstick trays at least half full?
+9819:729905 | Merchandising - 8. Did the other food offerings displayed (pasta, potatoes, meatballs, salads, etc.) look appetizing?
+9819:729906 | Photo of display area
+9819:729907 | Photo of display area
+9819:729908 | Merchandising - 9. Was the restaurant clean and in good condition?
+9819:729909 | Merchandising  - 9a. ...if no, what needs improvement?
+9819:729910 | Merchandising  - 9b. ...if other, please mention here
+9819:729911 | Merchandising - 10. If you weren't a mystery shopper, would the restaurant appearance / design have prompted you to eat at Sbarro?
+9819:729912 | Merchandising - 10a. ...if no, what would have dissuaded you?
+9819:729913 | Overall Experience  - 1. What is your likelihood to return? Scale 1-10
+9819:729915 | Overall Experience  - 2a. ...if other, please mention here
+9819:729916 | Merchandising - 11. Was there a hot grab-n-go section on the premises intended for Sbarro products?
+9819:729917 | Merchandising - 11a. If yes, was there any Sbarro product in the grab-n-go?
+9819:729918 | Merchandising - 11b. If so, what was there?
+9819:729919 | Merchandising - 11c. If yes, were any of the displayed products in the grab-n-go expired?
+9819:729920 | Expired Products
+9819:729921 | Expired Products
+9819:729922 | Merchandising Comments:
+9819:729923 | Guest Engagement
+9819:729924 | Guest Engagement - 1.  If the employees are not already engaging with existing customers, is a warm, friendly greeting given to each potential customer who walks by?
+9819:729925 | ...Please Explain:
+9819:729926 | Guest Engagement - 2. Did the employees appearance or lack of uniform detract from your overall experience?
+9819:729928 | Guest Engagement - 2b. ...if other
+9819:729929 | Guest Engagement - 3. Were the staff members friendly, upbeat and happy you were there?
+9819:729930 | Guest Engagement - 4. Did anyone suggest a Combo, a beverage (or larger size beverage), dipping cup, or other item?
+9819:729932 | Guest Engagement - 4b. ...if other, please mention here
+9819:729933 | Guest Engagement - 5. Which option best reflects how quickly you were served?
+9819:729934 | Guest Engagement - 6. Did the cashier thank you for coming to Sbarro and give you a warm send off?
+9819:729935 | Guest Engagement - 7. Were you given a receipt without asking for it?
+9819:729936 | Time order placed:
+9819:729937 | Time payment process is completed:
+9819:729938 | Guest Engagement - 8. How long was your experience from placing your order to cashing out at the register?
+9819:729939 | Guest Engagement Comments:
+9819:729940 | Delivered Product Quality
+9819:729941 | Delivered Product Quality - 1. Were the portion sizes and amount of toppings acceptable?
+9819:729942 | Delivered Product Quality - 2. Did your food taste fresh?
+9819:729943 | Delivered Product Quality - 3. Did the temperature of the food meet your expectations?
+9819:729944 | Delivered Product Quality - 4. How many Pepperonis does the pizza slice have?
+9819:729945 | Delivered Product Quality - 5. Did your pizza slice have bubbles that affected the overall food quality?
+9819:729946 | Picture of food from top
+9819:729947 | Picture of food from side
+9819:729948 | Picture of food from bottom
+9819:729949 | Food Quality Comments:
+9819:729950 | You will initially order a single slice of pepperoni pizza to see if the employee upsells you.
+9819:729951 | Overall Experience  - 2. What was the key driver of your response above?
+9819:729952 | Guest Engagement - 2a. ...if yes, What detracted from the visit?
+9819:729953 | Guest Engagement - 4a. ...if yes, what did they suggest?
+9819:729963 | AI EDITOR SUGGESTIONS (BETA DO NOT TOUCH)
+9819:729973 | Get a clear photo of the store that includes the Sbarro sign, the serving counter and cash register. It should be relatively close up and head-on. Here's a good example: &lt;br&gt;&lt;br&gt;
+
+
+
+&lt;img src='//cdn.sassiex.com/ff0b85b3-4b0f-498c-a931-9c274d455fef'/&gt;
+9819:729983 | For the question below please select N/A if you are at the location before 11:00 am  
+9819:729993 | For the question below, please refer to the photo you took of the display area to confirm if all labels were present. Handwritten labels are not considered professional. Please note if there are 2 different types of pizza on the same tray with only 1 label this is acceptable.  
+9819:730003 | &lt;BR&gt;We need close up pictures so we can see the details, especially the pizza display. We need to see the products!
+See example:
+
+&lt;img src='//cdn.sassiex.com/89cbfa2a-1a68-4929-848a-dc32b79830a3'/&gt;
+9819:730013 | Your photo of the pizza display MUST show pizzas, breadsticks, and strombolis in their pans and including labels. Ensure everything is clearly visible. The client needs to be able to count the number of pizza slices, strombolis, and breadsticks.  
+9819:730023 | The Grab -N - Go Questions below only applies to C-Stores and Travel Centers. Please Mark NO if you are not at one of these locations.  Please NOTE the Grab - N - Go sections could be located somewhere else in the store and NOT right by the Sbarro location.
+9819:730033 | The question below should only be applied to what the employee can control
+9819:730043 | For the question below, please refer to the photos you took of the pizza slice to confirm the count of pepperoni. The shop guidelines provide further instructions on how partial slices should be counted.  
+9819:730053 | Make sure to take your entire order out of the bag/package before taking the picture.&lt;BR&gt;&lt;BR&gt;Get 3 close up picture like in this sample &lt;u&gt;of your entire order&lt;/u&gt;
+
+
+
+&lt;img class="img-thumb"  src='//cdn.sassiex.com/d8369289-6d30-456e-8ada-64cf8140beab'/&gt;
+9819:730063 | OVERALL EXPERIENCE
+9819:730073 | Make sure to take your entire order out of the bag/package before taking the picture.&lt;BR&gt;&lt;BR&gt;Get 3 close up picture like in this sample &lt;u&gt;of your entire order&lt;/u&gt;&lt;BR&gt;
+
+&lt;img src='//cdn.sassiex.com/3c58973d-cc1b-4e5b-9fa6-0ab2755411e7'/&gt;
+9819:730083 | * US English grammar standard: chicago&lt;br&gt;
+* Improve writing level: standard&lt;br&gt;
+9819:730093 | Your comments must cover the entire Merchandising section (pizzas, strombolis, breadsticks, and display cleanliness), not just the Grab-N-Go area. If you marked any question negatively, you must provide a detailed explanation of what was wrong.
