@@ -27,19 +27,15 @@ jobs:
 
       - name: Create API environment file
         env:
-          SI_CLIENT_ID: ${{ secrets.SI_CLIENT_ID }}
-          SI_CLIENT_SECRET: ${{ secrets.SI_CLIENT_SECRET }}
-          SI_TOKEN_URL: ${{ secrets.SI_TOKEN_URL }}
-          EU_CLIENT_ID: ${{ secrets.EU_CLIENT_ID }}
-          EU_CLIENT_SECRET: ${{ secrets.EU_CLIENT_SECRET }}
-          EU_TOKEN_URL: ${{ secrets.EU_TOKEN_URL }}
+          NATIONAL_SURVEY_ID: ${{ secrets.NATIONAL_SURVEY_ID }}
+          NATIONAL_CLIENT_ID: ${{ secrets.NATIONAL_CLIENT_ID }}
+          NATIONAL_CLIENT_SECRET: ${{ secrets.NATIONAL_CLIENT_SECRET }}
+          NATIONAL_TOKEN_URL: ${{ secrets.NATIONAL_TOKEN_URL }}
         run: |
-          echo "SI_CLIENT_ID=$SI_CLIENT_ID" >> .env
-          echo "SI_CLIENT_SECRET=$SI_CLIENT_SECRET" >> .env
-          echo "SI_TOKEN_URL=$SI_TOKEN_URL" >> .env
-          echo "EU_CLIENT_ID=$EU_CLIENT_ID" >> .env
-          echo "EU_CLIENT_SECRET=$EU_CLIENT_SECRET" >> .env
-          echo "EU_TOKEN_URL=$EU_TOKEN_URL" >> .env
+          echo "NATIONAL_SURVEY_ID=$NATIONAL_SURVEY_ID" >> .env
+          echo "NATIONAL_CLIENT_ID=$NATIONAL_CLIENT_ID" >> .env
+          echo "NATIONAL_CLIENT_SECRET=$NATIONAL_CLIENT_SECRET" >> .env
+          echo "NATIONAL_TOKEN_URL=$NATIONAL_TOKEN_URL" >> .env
 
       - name: Create Google credentials file
         env:
