@@ -1,0 +1,40 @@
+name: Build Sbarro report
+
+# This workflow is completely independent of refresh.yml and the s1-s6
+# data-refresh scripts. It does not modify, call, or depend on any of them.
+# It only reads the Google Sheet (after refresh.yml has had time to update
+# it) and builds/publishes the report as index.html.
+
+on:
+  schedule:
+    # Runs daily at 05:00 UTC — 30 minutes after refresh.yml's 04:30 UTC
+    # run, to give the Sassie -> Sheet refresh time to finish first.
+    - cron: '0 5 * * *'
+  workflow_dispatch: {}   # lets you trigger a manual rebuild from the Actions tab
+
+permissions:
+  contents: write
+
+jobs:
+  build-report:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: Install dependencies
+        run: pip install pandas
+
+      - name: Build report from live Google Sheet
+        run: python scripts/build_report.py
+
+      - name: Commit and push report if changed
+        run: |
+          git config user.name "sbarro-report-bot"
+          git config user.email "actions@users.noreply.github.com"
+          git add index.html
+          git diff --quiet --cached || git commit -m "Auto-update report ($(date -u +'%Y-%m-%d %H:%M UTC'))"
+          git push
